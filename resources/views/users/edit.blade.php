@@ -3,7 +3,7 @@
 @section('content')
    <br>
    <h2 style="display:inline;">編輯商家資訊</h2>
-   <a class="btn btn-primary" style="float:right" href="{{ route('users.index') }}"> 後退</a>
+   <a class="btn btn-info" style="float:right" href="{{ route('users.index') }}"> 後退</a>
    <hr>
 
 

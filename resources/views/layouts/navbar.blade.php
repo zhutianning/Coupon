@@ -1,6 +1,6 @@
 <nav class="navbar navbar-default navbar-static-top m-b-0">
     <div class="navbar-header"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></a>
-        <div class="top-left-part"><a class="logo" href="{{ url('/') }}"><b><img src="../plugins/images/Coupon1.png" alt="home" /></b><span class="hidden-xs"><img src="../plugins/images/pixeladmin-text.png" alt="home" /></span></a></div>
+        <div class="top-left-part"><a class="logo" href="{{ url('/') }}"><b><img src="../plugins/images/img0001.png" alt="home" /></b><span class="hidden-xs"><img src="../plugins/images/img0002.png" alt="home" /></span></a></div>
         @guest @else
         <ul class="nav navbar-top-links navbar-left m-l-20 hidden-xs">
             <li>

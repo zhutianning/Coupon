@@ -3,7 +3,7 @@
 @section('content')
     <br>
     <h2 style="display:inline;">訊息推播</h2>
-    <a class="btn btn-success" style="float:right" href="{{ route('messages.create') }}"> 發送新的訊息</a>
+    <a class="btn btn-info" style="float:right" href="{{ route('messages.create') }}"> 發送新的訊息</a>
     <hr>
 
     @if ($message = Session::get('success'))

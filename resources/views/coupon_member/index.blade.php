@@ -2,8 +2,11 @@
 
 @section('content')
 
-   <br>
-   <h2 style="display:inline;">結帳</h2>
+    <br>
+    <div class="alert alert-info" role="alert">
+    <h2 style="display:inline;">請在這裡結帳!</h2>
+    </div>
+    
    <!-- <a class="button" style="float:right" href="{{ route('coupons.create') }}"> Create New Coupon</a> -->
    <hr>
 
@@ -14,11 +17,10 @@
     @endif
 
     {!! Form::open( ['method' => 'GET']) !!}
-        <ul class="actions">
-            <h3 style="display:inline;">顧客手機號碼：</h3>
+            <h4 style="display:inline;">顧客手機號碼：</h4>
             <input type="text" name="usr_phone" id="usr_phone">
-		    <input type="submit" value="搜尋" class="special" />
-		</ul>
+		    <input type="submit" value="搜尋" class="btn btn-danger" />
+		
     {!! Form::close() !!}
 
 

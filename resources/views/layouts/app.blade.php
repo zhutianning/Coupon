@@ -7,7 +7,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
-<title>Pixel Admin - Responsive Admin Dashboard Template built with Twitter Bootstrap</title>
+<title  >商家折價券整合平台</title>
 <!-- Bootstrap Core CSS -->
 <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- Menu CSS -->

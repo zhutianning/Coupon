@@ -7,7 +7,6 @@
                         <h4 class="page-title">主控台</h4> </div>
                     <!-- <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12"> <a href="http://wrappixel.com/templates/pixeladmin/" target="_blank" class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light">Upgrade to Pro</a> -->
                         <ol class="breadcrumb">
-                            <li><a class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light" href="{{ url('/') }}">主控台</a></li>
                        
                         </ol>
                     </div>
@@ -48,6 +47,9 @@
                             </div>
                         </div>
                     </div>
+
+
+                    
                     <!-- /.col -->
                     <!--col -->
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -87,19 +89,11 @@
                     </div>
                 </div> -->
                 <!--row -->
+  
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="white-box">
-                            <h3 class="box-title">最新折價券</h3>
-                                <!-- <div class="col-md-2 col-sm-4 col-xs-12 pull-right">
-                                    <select class="form-control pull-right row b-none">
-                                        <option>March 2016</option>
-                                        <option>April 2016</option>
-                                        <option>May 2016</option>
-                                        <option>June 2016</option>
-                                        <option>July 2016</option>
-                                    </select>
-                                </div> -->
+                            <h3 class="box-title">最新折價卷
                             </h3>
                             <div class="table-responsive">
                                 <table class="table ">
@@ -112,53 +106,30 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    @foreach ($coupons as $coupon)
                                         <tr>
-                                            <td class="txt-oflo">Pixel admin</td>
-                                            <td>SALE</td>
-                                            <td class="txt-oflo">April 18</td>
-                                            <td><span class="text-success">$24</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="txt-oflo">Real Homes</td>
-                                            <td>EXTENDED</td>
-                                            <td class="txt-oflo">April 19</td>
-                                            <td><span class="text-info">$1250</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="txt-oflo">Medical Pro</td>
-                                            <td>TAX</td>
-                                            <td class="txt-oflo">April 20</td>
-                                            <td><span class="text-danger">-$24</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="txt-oflo">Hosting press</td>
-                                            <td>SALE</td>
-                                            <td class="txt-oflo">April 21</td>
-                                            <td><span class="text-success">$24</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="txt-oflo">Helping Hands</td>
-                                            <td>MEMBER</td>
-                                            <td class="txt-oflo">April 22</td>
-                                            <td><span class="text-success">$24</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="txt-oflo">Digital Agency</td>
-                                            <td>SALE</td>
-                                            <td class="txt-oflo">April 23</td>
-                                            <td><span class="text-danger">-$14</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="txt-oflo">Helping Hands</td>
-                                            <td>MEMBER</td>
-                                            <td class="txt-oflo">April 22</td>
-                                            <td><span class="text-success">$64</span></td>
+                                            <td class="txt-oflo">{{ $coupon->content}}</td>
+                                            <td>{{ $coupon->amount}}</td>
+                                            <td class="txt-oflo">{{ $coupon->time}}</td>
+                                            <td><span class="text-success">{{ $coupon->created_at}}</span></td>
+                                            <td>
+
+                                            <!-- <a class="btn btn-primary" href="{{ route('coupons.show',$coupon->id) }}">查看</a> -->
+                                            <!-- <a class="btn btn-primary" href="{{ route('coupons.edit',$coupon->id) }}">Edit</a> -->
+                                            <!-- {!! Form::open(['method' => 'DELETE','route' => ['coupons.destroy', $coupon->id],'style'=>'display:inline']) !!}
+                                            {!! Form::submit('刪除', ['class' => 'btn btn-danger']) !!}
+                                            {!! Form::close() !!} -->
+
+                                            </td>
                                         </tr>
                                     </tbody>
-                                </table> <a class="fa fa-spin fa-refresh" href="{{ route('coupons.index') }}"></a> </div>
+                                    @endforeach
+                                </table> 
+                            </div>
                         </div>
                     </div>
-                </div>
+        </div>
+
                 <!-- /.row -->
                 <!-- row -->
                 <div class="row">
@@ -184,6 +155,13 @@
                             </div>
                         </div>
                     </div>
+
+
+
+
+
+
+                    
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="white-box">
                             <h3 class="box-title">最近訂閱的會員</h3>

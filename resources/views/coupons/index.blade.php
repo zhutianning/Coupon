@@ -4,7 +4,7 @@
 
    <br>
    <h2 style="display:inline;">優惠券管理</h2>
-   <a class="btn btn-success" style="float:right" href="{{ route('coupons.create') }}"> 創建新的優惠券</a>
+   <a class="btn btn-info" style="float:right" href="{{ route('coupons.create') }}"> 創建新的優惠券</a>
    <hr>
 
     @if ($message = Session::get('success'))

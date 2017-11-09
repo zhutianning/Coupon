@@ -11,9 +11,10 @@
                 @yield('content')
                 </div>
             <!-- /.container-fluid -->
-            <footer class="footer text-center"> 2017 &copy; 這裡是店家折價券整合平台.com </footer>
+            <footer class="footer text-center">©2017  世新大學資訊管理學系資訊管理組四年級甲班.畢業專題製作.Q胖小組</footer>
         </div>
         <!-- /#page-wrapper -->
+        
 
 
 @endsection

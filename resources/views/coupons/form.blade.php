@@ -1,5 +1,25 @@
+ 
+ <div class="preloader">
+        <div class="cssload-speeding-wheel"></div>
+</div>
+
+
+
+<div id="wrapper">
+            <ul class="nav navbar-top-links navbar-left m-l-20 hidden-xs">
+                <li>
+                    <form role="search" class="app-search hidden-xs">
+                    </form>
+                </li>
+            </ul>
+                     
+        
+<div id="page-wrapper">
+<div class="container-fluid">
+<div class="row">
+
 <div class="col-md-8 col-xs-12">
-    <!-- <div class="white-box"> -->
+    <div class="white-box">
         <form class="form-horizontal form-material">
         
             <div class="form-group">
@@ -39,7 +59,11 @@
             </div>
 
         </form>
-    <!-- </div> -->
+    </div>
 </div>
 
+</div>
+</div>
+</div>
+</div>
    
