@@ -58,10 +58,10 @@
                                 <div class="col-md-6 col-sm-6 col-xs-6"> <i class="linea-icon linea-basic" data-icon="&#xe00b;"></i>
                                     <h5 class="text-muted vb">折價卷拿取數量</h5> </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <h3 class="counter text-right m-t-15 text-primary">{{ $coupontakens }}</h3> </div>
+                                    <h3 class="counter text-right m-t-15 text-primary">{{ $coupon_member }}</h3> </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="{{ $coupontakens }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ $coupontakens }}%"> <span class="sr-only">{{ $coupontakens }}% Complete (success)</span> </div>
+                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="{{ $coupon_member }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ $coupon_member }}%"> <span class="sr-only">{{ $coupon_member }}% Complete (success)</span> </div>
                                     </div>
                                 </div>
                             </div>

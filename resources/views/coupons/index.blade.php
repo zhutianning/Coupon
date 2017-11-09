@@ -18,6 +18,7 @@
     <div class="row">
                     <div class="col-sm-12">
                         <div class="white-box">
+
                             <h3 class="box-title">折價卷
                             </h3>
                             <div class="table-responsive">

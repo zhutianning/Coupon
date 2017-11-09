@@ -19,6 +19,10 @@
         </div>
     @endif
 
+                                
+
+
+
     {!! Form::open(array('route' => 'coupons.store','method'=>'POST')) !!}
          @include('coupons.form')
     {!! Form::close() !!}

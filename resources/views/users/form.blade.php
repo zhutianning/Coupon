@@ -1,18 +1,8 @@
-<div id="wrapper">
-
-    <div id="page-wrapper">
-        <div class="container-fluid">
-            <ul class="nav navbar-top-links navbar-left m-l-20 hidden-xs">
-                <li>
-                    <form role="search" class="app-search hidden-xs">
-                    </form>
-                </li>
-            </ul>
-            <div class="row">
 
 
 
-                <div class="col-md-8 col-xs-12">
+    <div class="white-box">
+                <div class="row">
                     <!-- <div class="white-box"> -->
                     <form class="form-horizontal form-material">
 
@@ -68,7 +58,4 @@
                     <!-- </div> -->
                 </div>
 
-            </div>
-        </div>
-    </div>
-</div>
+     </div>
