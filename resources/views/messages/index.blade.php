@@ -13,7 +13,7 @@
     @endif
     <!-- <div style="padding:0px 100px 0px 100px;"> -->
 
-    <div class="row">
+                <div class="row">
                     <div class="col-sm-12">
                         <div class="white-box">
                             <h3 class="box-title">訊息推播

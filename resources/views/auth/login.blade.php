@@ -27,7 +27,7 @@
 
 
     <div class="form-group">
-        <button type="submit" class="fa fa-sign-in">
+        <button type="submit" class="btn btn-primary">
         登入    
         </button>
         <a href="{{ route('password.request') }}" class="btn btn-info">

@@ -68,28 +68,8 @@
                         </div>
                     </div>
                     <!-- /.col -->
-                </div>
-                <!-- /.row -->
-                <!--row -->
-                <!-- <div class="row">
-                    <div class="col-md-12">
-                        <div class="white-box">
-                            <h3 class="box-title">用戶 與 折價卷 成長表</h3>
-                            <ul class="list-inline text-right">
-                                <li>
-                                    <h5><i class="fa fa-circle m-r-5" style="color: #dadada;"> A 用戶成長</i></h5>
-                                </li>
-                                <li>
-                                    <h5><i class="fa fa-circle m-r-5" style="color: #aec9cb;"> B 折價卷拿取</i></h5>
-                                </li>
-                            </ul>
-                            <div id="morris-area-chart2" style="height: 370px;"></div>
-
-                        </div>
-                    </div>
-                </div> -->
-                <!--row -->
-  
+                </div> 
+               <!--row -->
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="white-box">
@@ -112,15 +92,6 @@
                                             <td>{{ $coupon->amount}}</td>
                                             <td class="txt-oflo">{{ $coupon->time}}</td>
                                             <td><span class="text-success">{{ $coupon->created_at}}</span></td>
-                                            <td>
-
-                                            <!-- <a class="btn btn-primary" href="{{ route('coupons.show',$coupon->id) }}">查看</a> -->
-                                            <!-- <a class="btn btn-primary" href="{{ route('coupons.edit',$coupon->id) }}">Edit</a> -->
-                                            <!-- {!! Form::open(['method' => 'DELETE','route' => ['coupons.destroy', $coupon->id],'style'=>'display:inline']) !!}
-                                            {!! Form::submit('刪除', ['class' => 'btn btn-danger']) !!}
-                                            {!! Form::close() !!} -->
-
-                                            </td>
                                         </tr>
                                     </tbody>
                                     @endforeach
@@ -128,70 +99,63 @@
                             </div>
                         </div>
                     </div>
-        </div>
-
+                </div>
                 <!-- /.row -->
+                
                 <!-- row -->
                 <div class="row">
                     <div class="col-md-12 col-lg-6 col-sm-12">
                         <div class="white-box">
                             <h3 class="box-title">最近推播的訊息</h3>
-                            <div class="comment-center">
-                                <div class="comment-body">
-                                    <div class="user-img"> <img src="../plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"></div>
-                                    <div class="mail-contnet">
-                                        <h5>Pavan kumar</h5> <span class="mail-desc">Donec ac condimentum massa. Etiam pellentesque pretium lacus. Phasellus ultricies dictum suscipit. Aenean commodo dui pellentesque molestie feugiat.</span><a href="javacript:void(0)" class="action"><i class="ti-close text-danger"></i></a> <a href="javacript:void(0)" class="action"><i class="ti-check text-success"></i></a><span class="time pull-right">April 14, 2016</span></div>
-                                </div>
-                                <div class="comment-body">
-                                    <div class="user-img"> <img src="../plugins/images/users/sonu.jpg" alt="user" class="img-circle"> </div>
-                                    <div class="mail-contnet">
-                                        <h5>Sonu Nigam</h5> <span class="mail-desc">Donec ac condimentum massa. Etiam pellentesque pretium lacus. Phasellus ultricies dictum suscipit. Aenean commodo dui pellentesque molestie feugiat.</span><a href="javacript:void(0)" class="action"><i class="ti-close text-danger"></i></a> <a href="javacript:void(0)" class="action"><i class="ti-check text-success"></i></a><span class="time pull-right">April 14, 2016</span></div>
-                                </div>
-                                <div class="comment-body b-none">
-                                    <div class="user-img"> <img src="../plugins/images/users/arijit.jpg" alt="user" class="img-circle"> </div>
-                                    <div class="mail-contnet">
-                                        <h5>Arijit Sinh</h5> <span class="mail-desc">Donec ac condimentum massa. Etiam pellentesque pretium lacus. Phasellus ultricies dictum suscipit. Aenean commodo dui pellentesque molestie feugiat. </span><a href="javacript:void(0)" class="action"><i class="ti-close text-danger"></i></a> <a href="javacript:void(0)" class="action"><i class="ti-check text-success"></i></a><span class="time pull-right">April 14, 2016</span></div>
-                                </div>
-                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>  
+                                            <th>標題</th>
+                                            <th>內容</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    @foreach ($messages as $message)
+                                        <tr>
+                                           
+                                            <td>{{ $message->title}}</td>
+                                            <td>{{ $message->content}}</td>
+                                        </tr>
+                                    </tbody>
+                                    @endforeach
+                                </table> 
+                             </div>
+
                         </div>
                     </div>
-
-
-
-
-
-
-                    
+                
+                <!-- /.row -->
+                <!-- row --> 
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="white-box">
                             <h3 class="box-title">最近訂閱的會員</h3>
-                            <div class="message-center">
-                                <a href="#">
-                                    <div class="user-img"> <img src="../plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
-                                    <div class="mail-contnet">
-                                        <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
-                                </a>
-                                <a href="#">
-                                    <div class="user-img"> <img src="../plugins/images/users/sonu.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
-                                    <div class="mail-contnet">
-                                        <h5>Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
-                                </a>
-                                <a href="#">
-                                    <div class="user-img"> <img src="../plugins/images/users/arijit.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
-                                    <div class="mail-contnet">
-                                        <h5>Arijit Sinh</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span> </div>
-                                </a>
-                                <a href="#">
-                                    <div class="user-img"> <img src="../plugins/images/users/genu.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
-                                    <div class="mail-contnet">
-                                        <h5>Genelia Deshmukh</h5> <span class="mail-desc">I love to do acting and dancing</span> <span class="time">9:08 AM</span> </div>
-                                </a>
-                                <a href="#" class="b-none">
-                                    <div class="user-img"> <img src="../plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
-                                    <div class="mail-contnet">
-                                        <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
-                                </a>
-                            </div>
+                                <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <tr>
+                                        <th>Phone</th>
+                                        <th>Name</th>
+                                        <th>Sex</th>
+                                        <th>Birthday</th>
+                                        <!-- <th width="280px">Action</th> -->
+                                    </tr>
+                                    @foreach ($members as $member)
+                                    <tr>
+                                        
+                                        <td>{{ $member->phone}}</td>
+                                        <td>{{ $member->name}}</td>
+                                        <td>{{ $member->sex}}</td>
+                                        <td>{{ $member->birthday}}</td>
+
+                                    </tr>
+                                    @endforeach
+                                </table>
+                                </div>
                         </div>
                     </div>
                 </div>

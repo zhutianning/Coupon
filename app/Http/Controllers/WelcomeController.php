@@ -32,6 +32,8 @@ class WelcomeController extends Controller
         $couponsCount = Auth::user()->coupons()->count();
         $coupons = Auth::user()->coupons()->get();
         $membersCount = Auth::user()->members()->count();
+        $messages = Auth::user()->messages()->get();
+        $members = Auth::user()-> members()->get();
 
         $coupon_member = DB::table('coupon_member')
             ->join('coupons', 'coupon_member.coupon_id', '=', 'coupons.id')
@@ -40,6 +42,6 @@ class WelcomeController extends Controller
             ->select('coupon_member.id', 'coupons.content', 'members.name', 'members.phone')
             ->get()->count();
 
-        return view('welcome',compact('couponsCount', 'membersCount', 'coupon_member','coupons','members'));
+        return view('welcome',compact('couponsCount', 'membersCount', 'coupon_member','coupons','members','messages'));
     }
 }
