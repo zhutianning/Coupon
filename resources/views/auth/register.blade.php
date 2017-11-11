@@ -4,7 +4,7 @@
     <section class="login_content">
         <!-- .row -->
         <div class="row">
-            <div class="col-md-8 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="white-box">
                     <form action="{{ route('register') }}" method="post">
                         {{ csrf_field() }}
