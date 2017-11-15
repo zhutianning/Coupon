@@ -11,7 +11,7 @@
     <ul class="alt">
 		<li>
             <div class="row">
-                <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="form-group">
                         <strong>店家名稱</strong>  
                             {{ $user->name}}
@@ -21,7 +21,7 @@
         </li>
 		<li>            
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="form-group">
                         <strong>電子郵箱:</strong>
                         {{ $user->email}}
@@ -31,7 +31,7 @@
         </li>
 		<li>
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="form-group">
                         <strong>聯繫電話:</strong>
                         {{ $user->phone}}
@@ -41,7 +41,7 @@
         </li>
         <li>
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="form-group">
                         <strong>店家地址:</strong>
                         {{ $user->address}}
@@ -51,7 +51,7 @@
         </li>
         <li>
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="form-group">
                         <strong>商家介紹:</strong>
                         {{ $user->store_intro}}

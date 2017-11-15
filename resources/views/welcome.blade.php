@@ -17,15 +17,21 @@
                     <!--col -->
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <div class="white-box">
-                            <div class="col-in row">
-                                <div class="col-md-6 col-sm-6 col-xs-6"> <i data-icon="E" class="linea-icon linea-basic"></i>
-                                    <h5 class="text-muted vb">折價卷 數量</h5> </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <h3 class="counter text-right m-t-15 text-danger">{{ $couponsCount }}</h3> </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="{{ $couponsCount }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ $couponsCount }}%"> <span class="sr-only">{{ $couponsCount }}% Complete (success)</span> </div>
-                                    </div>
+                            <div class="alert alert-info" role="alert">
+                                <div class="col-in row">
+                                
+                                        <div class="col-md-6 col-sm-6 col-xs-6"> <i data-icon="E" class="linea-icon linea-basic"></i>
+                                            <h5 class="text-white vb">折價卷 數量</h5> 
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <h3 class="counter text-right m-t-15 text-white">{{ $couponsCount }}</h3> 
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-danger bg-white" role="progressbar" aria-valuenow="{{ $couponsCount }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ $couponsCount }}%"> <span class="sr-only">{{ $couponsCount }}% Complete (success)</span> </div>
+                                            </div>
+                                        </div>
+                               
                                 </div>
                             </div>
                         </div>
@@ -34,14 +40,16 @@
                     <!--col -->
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <div class="white-box">
-                            <div class="col-in row">
-                                <div class="col-md-6 col-sm-6 col-xs-6"> <i class="linea-icon linea-basic" data-icon="&#xe01b;"></i>
-                                    <h5 class="text-muted vb">訂閱會員 數量</h5> </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <h3 class="counter text-right m-t-15 text-megna">{{ $membersCount }}</h3> </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-megna" role="progressbar" aria-valuenow="{{ $membersCount }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ $membersCount }}%"> <span class="sr-only">{{ $membersCount }}% Complete (success)</span> </div>
+                            <div class="alert alert-info" role="alert">
+                                <div class="col-in row">
+                                    <div class="col-md-6 col-sm-6 col-xs-6"> <i class="linea-icon linea-basic" data-icon="&#xe01b;"></i>
+                                        <h5 class="text-white vb">訂閱會員 數量</h5> </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <h3 class="counter text-right m-t-15 text-white">{{ $membersCount }}</h3> </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-danger bg-white" role="progressbar" aria-valuenow="{{ $membersCount }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ $membersCount }}%"> <span class="sr-only">{{ $membersCount }}% Complete (success)</span> </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -54,14 +62,16 @@
                     <!--col -->
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <div class="white-box">
-                            <div class="col-in row">
-                                <div class="col-md-6 col-sm-6 col-xs-6"> <i class="linea-icon linea-basic" data-icon="&#xe00b;"></i>
-                                    <h5 class="text-muted vb">折價卷拿取數量</h5> </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <h3 class="counter text-right m-t-15 text-primary">{{ $coupon_member }}</h3> </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="{{ $coupon_member }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ $coupon_member }}%"> <span class="sr-only">{{ $coupon_member }}% Complete (success)</span> </div>
+                            <div class="alert alert-info" role="alert"> 
+                                <div class="col-in row">
+                                    <div class="col-md-6 col-sm-6 col-xs-6"> <i class="linea-icon linea-basic" data-icon="&#xe00b;"></i>
+                                        <h5 class="text-white vb">折價卷拿取數量</h5> </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <h3 class="counter text-right m-t-15 text-white">{{ $coupon_member }}</h3> </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-danger bg-white" role="progressbar" aria-valuenow="{{ $coupon_member }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ $coupon_member }}%"> <span class="sr-only">{{ $coupon_member }}% Complete (success)</span> </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
