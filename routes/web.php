@@ -19,7 +19,8 @@ Auth::routes();
 
 Route::get('/', 'WelcomeController@index')->name('welcome');
 
-Route::resource('coupon_member','CouponMemberController');
+Route::resource('subr','SubrController');
+
 
 Route::resource('users','UserController');
 

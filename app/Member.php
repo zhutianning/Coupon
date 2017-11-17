@@ -14,7 +14,7 @@ class Member extends Model
 
     public function users()
     {
-        return $this->belongsToMany('App\User', 'sub', 'user_id', 'member_id')->withTimestamps();
+        return $this->belongsToMany('App\User', 'shopsub', 'user_id', 'member_id')->withTimestamps();
     }
 
   

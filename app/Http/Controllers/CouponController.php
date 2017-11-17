@@ -50,15 +50,15 @@ class CouponController extends Controller
      */
     public function member_coupon()
     {
-        $coupon_member = DB::table('coupon_member')
-            ->join('coupons', 'coupon_member.coupon_id', '=', 'coupons.id')
-            ->join('members', 'coupon_member.member_id', '=', 'members.id')
+        $subr = DB::table('subr')
+            ->join('coupons', 'subr.coupon_id', '=', 'coupons.id')
+            ->join('members', 'subr.member_id', '=', 'members.id')
             ->where('coupons.user_id', '=', Auth::user()->id)
             ->select('coupons.id', 'coupons.content', 'members.name')
             ->get();
 
         
-        return view('coupons.member_coupon', compact('coupon_member','members', 'coupons'));
+        return view('coupons.member_coupon', compact('subr','members', 'coupons'));
     }
     /**
      * Show the form for creating a new resource.

@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Coupon;
-use App\Member;
 use App\Message;
+use App\Subr;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 
@@ -34,14 +34,16 @@ class WelcomeController extends Controller
         $membersCount = Auth::user()->members()->count();
         $messages = Auth::user()->messages()->get();
         $members = Auth::user()-> members()->get();
+        
 
-        $coupon_member = DB::table('coupon_member')
-            ->join('coupons', 'coupon_member.coupon_id', '=', 'coupons.id')
-            ->join('members', 'coupon_member.member_id', '=', 'members.id')
+        $subr = DB::table('subr')
+            ->join('coupons', 'subr.coupon_id', '=', 'coupons.id')
+            ->join('members', 'subr.member_id', '=', 'members.id')
             ->where('coupons.user_id', '=', Auth::user()->id)
-            ->select('coupon_member.id', 'coupons.content', 'members.name', 'members.phone')
+            ->select('subr.id', 'coupons.content', 'members.name', 'members.phone')
             ->get()->count();
 
-        return view('welcome',compact('couponsCount', 'membersCount', 'coupon_member','coupons','members','messages'));
+
+        return view('welcome',compact('couponsCount', 'membersCount', 'subr','coupons','messages', 'members'));
     }
 }

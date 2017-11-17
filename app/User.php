@@ -20,7 +20,7 @@ class User extends Authenticatable
 
     public function members()
     {
-        return $this->belongsToMany('App\Member',  'sub', 'user_id', 'member_id')->withTimestamps();
+        return $this->belongsToMany('App\Member',  'shopsub', 'user_id', 'member_id')->withTimestamps();
     }
 
 

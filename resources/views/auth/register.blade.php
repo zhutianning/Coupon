@@ -41,22 +41,6 @@
                             <input  id="password-confirm" type="password" class="form-control" name="password_confirmation" required><br>
                         </div>
 
-                        <!-- <div class="form-group">
-                            <label class="col-sm-12">選擇您的國家地區</label>
-                            <div class="col-sm-12">
-                                <select class="form-control form-control-line">
-                                                <option>London</option>
-                                                <option>India</option>
-                                                <option>Usa</option>
-                                                <option>Canada</option>
-                                                <option>Thailand</option>
-                                                <option>Taiwan</option>
-                                </select><br>
-                            </div>
-                        </div> -->
-
-
-
 
                         <div class="clearfix"></div>
 

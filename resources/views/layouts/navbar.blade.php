@@ -43,7 +43,7 @@
                 <a href="{{ url('/users') }}" class="waves-effect"><i class="fa fa-font fa-fw" aria-hidden="true"></i><span class="hide-menu">店面管理</span></a>
             </li>
             <li>
-                <a href="{{ url('/coupon_member') }}" class="waves-effect"><i class="fa fa-usd fa-fw" aria-hidden="true"></i><span class="hide-menu">結帳</span></a>
+                <a href="{{ url('/subr') }}" class="waves-effect"><i class="fa fa-usd fa-fw" aria-hidden="true"></i><span class="hide-menu">結帳</span></a>
             </li>
         </ul>
         <!-- <div class="center p-20">
