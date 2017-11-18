@@ -55,14 +55,14 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach ($members as $member)
+                                    @foreach ($subr as $subr)
                                         <tr>
-                                            <td>{{ $member->id}}</td>
-                                            <td>{{ $member->content}}</td>
+                                            <td>{{ $subr->id}}</td>
+                                            <td>{{ $subr->content}}</td>
                         
                                     
-                                            <td>{{ $member->name}}</td>
-                                            <td>{{ $member->phone}}</td>
+                                            <td>{{ $subr->name}}</td>
+                                            <td>{{ $subr->phone}}</td>
                                             <td>
                                             
                                             {!! Form::open(['method' => 'DELETE','route' => ['subr.destroy', $subr->id],'style'=>'display:inline']) !!}

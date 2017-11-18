@@ -95,11 +95,15 @@ class UserController extends Controller
             'address' => 'required',
             'store_intro' ,
             'created_at' ,
+            'distance' ,
+
         ]);
         Auth::user()->find($id)->update($request->all());
         return redirect()->route('users.index')
                         ->with('success','User updated successfully');
     }
+
+
 
     /**
      * Remove the specified resource from storage.
