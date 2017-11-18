@@ -9,7 +9,7 @@ class Member extends Model
     
     public function coupons()
     {
-        return $this->belongsToMany('App\Coupon', 'coupon_member')->withTimestamps();
+        return $this->belongsToMany('App\Coupon', 'subr','cpid','member_id')->withTimestamps();
     }
 
     public function users()

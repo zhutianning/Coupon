@@ -17,7 +17,7 @@ class Coupon extends Model
 
     public function members()
     {
-        return $this->belongsToMany('App\Member', 'coupon_member')->withTimestamps();
+        return $this->belongsToMany('App\Member', 'subr', 'cpid', 'member_id')->withTimestamps();
     }
 
     //

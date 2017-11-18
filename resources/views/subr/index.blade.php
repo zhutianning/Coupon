@@ -48,7 +48,7 @@
                                 <table class="table ">
                                     <thead>
                                         <tr>
-                                        <th></th>
+                                        
                                             <th>優惠券內容</th>
                                             <th>顧客姓名</th>
                                             <th>顧客phone</th>
@@ -57,7 +57,6 @@
                                     <tbody>
                                     @foreach ($subr as $subr)
                                         <tr>
-                                            <td>{{ $subr->id}}</td>
                                             <td>{{ $subr->content}}</td>
                         
                                     
@@ -66,7 +65,7 @@
                                             <td>
                                             
                                             {!! Form::open(['method' => 'DELETE','route' => ['subr.destroy', $subr->id],'style'=>'display:inline']) !!}
-                                            {!! Form::submit('刪除', ['class' => 'btn btn-danger']) !!}
+                                            {!! Form::submit('確認使用', ['class' => 'btn btn-danger']) !!}
                                             {!! Form::close() !!}
 
                                             </td>
