@@ -24,6 +24,13 @@ class SubrController extends Controller
 
     public function index()
     {
+        
+        // $subr = DB::table('subr')
+        //     ->insert('subr.cpid', '=', 'subr.coupon_id');
+        // DB::table('subr')
+        // ->select('id')
+        // ->insert(['subr.coupon_id' => 1, 'subr.member_id' => 1]);
+
 
         $search = \Request::get('usr_phone');
 
